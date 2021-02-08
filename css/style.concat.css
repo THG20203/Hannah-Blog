@@ -1,0 +1,161 @@
+/*
+ 0-600px : Phone
+ 600-900px : Tablet portrait
+ 900-1200px : Tablet landscape
+ [1200px- 1800px] is where one normal styles apply.
+ 1800px+ : Big Desktop
+
+ $breakpoint argument choices :
+ -phone
+ -tab-port
+ -tab-land
+ -big-desktop
+
+ 1em - 16px
+ */
+/*
+COLORS:
+*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7; }
+
+.heading-primary {
+  color: #E7E7F2; }
+  .heading-primary--main {
+    display: block;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    backface-visibility: hidden;
+    animation-duration: 2s;
+    margin-bottom: 4rem; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    animation: moveInRight 2s;
+    margin-bottom: 4rem; }
+
+.sidebar-text {
+  color: #1F541F; }
+  .sidebar-text--title {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem; }
+  .sidebar-text--subheader {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: .75rem; }
+  .sidebar-text--description {
+    font-size: 2.5rem;
+    font-weight: 300; }
+
+.btn {
+  height: 8rem;
+  background-image: url(../images/instagram.png);
+  background-size: cover;
+  background-position: center; }
+  .btn:link, .btn:visited {
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all 2s;
+    position: relative; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .btn:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+  .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
+  .btn--white::after {
+    background-color: #E7E7F2;
+    opacity: 0.5;
+    border-radius: .6rem; }
+
+.header {
+  position: relative;
+  background: linear-gradient(rgba(138, 154, 91, 0.7), rgba(31, 84, 31, 0.7)), url(../images/hannahImgSmall.png) no-repeat top center fixed;
+  background-size: cover;
+  height: 115vh; }
+  @media (min-resolution: 192dpi) and (min-width: 600px), (min-width: 800px) {
+    .header {
+      background: linear-gradient(rgba(138, 154, 91, 0.7), rgba(31, 84, 31, 0.7)), url(../images/hannahImg.png) no-repeat top center fixed;
+      background-size: cover;
+      height: 115vh; } }
+  .header__text-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
