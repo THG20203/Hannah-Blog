@@ -28,6 +28,29 @@ body {
   }
 }
 
+.navbar {
+  color: $color-off-white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  text-decoration: none;
+  &__item {
+    color: $color-off-white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    text-decoration: none;
+  }
+}
+
+.menu-btn {
+  color: $color-off-white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  text-decoration: none;
+}
+
 .sidebar-text {
   color: $color-forest-green;
 

@@ -16,6 +16,14 @@
 /*
 COLORS:
 */
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -93,6 +101,26 @@ body {
     animation: moveInRight 2s;
     margin-bottom: 4rem; }
 
+.navbar {
+  color: #E7E7F2;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  text-decoration: none; }
+  .navbar__item {
+    color: #E7E7F2;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    text-decoration: none; }
+
+.menu-btn {
+  color: #E7E7F2;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  text-decoration: none; }
+
 .sidebar-text {
   color: #1F541F; }
   .sidebar-text--title {
@@ -159,3 +187,46 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+/* (open navbar) button */
+.menu-btn {
+  position: fixed;
+  top: 3vh;
+  left: 90vw; }
+
+/* navbar effects */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: "space1 item1 item2 item3 item4 item5 space2";
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* navbar items */
+  /* navbar effects */ }
+  .navbar__item--1 {
+    grid-area: item1; }
+  .navbar__item--2 {
+    grid-area: item2; }
+  .navbar__item--3 {
+    grid-area: item3; }
+  .navbar__item--4 {
+    grid-area: item4; }
+  .navbar__item--5 {
+    grid-area: item5; }
+  .navbar__initial {
+    visibility: hidden;
+    display: none; }
+  .navbar__animation--moveIn {
+    animation: moveInTop 2s; }
+  .navbar__background--colored {
+    background-color: rgba(255, 255, 255, 0.8); }
+  .navbar__background--transparent {
+    background: rgba(255, 255, 255, 0.2); }
