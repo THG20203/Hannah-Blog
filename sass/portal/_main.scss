@@ -1,0 +1,23 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: rgba($color-cream, 0.8);
+  box-shadow: 0 1rem 3rem $color-box-shadow;
+  min-height: 50rem;
+  &__header {
+    height: 7rem;
+    background-color: $color-off-white;
+    border-bottom: $color-moss-green;
+  }
+  &__content {
+      display: flex;
+    &--sidebar {
+      background-color: $color-black;
+      flex: 0 0 18%;
+    }
+    &--articles {
+      background-color: $color-off-white;
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.timeline-container {
+  background: url(../images/timeline.png) no-repeat top center fixed;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  /* grid CSS styles */
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 10rem repeat(6, min-content) 10rem;
+  grid-template-columns: 1fr 10rem 1fr;
+  grid-template-areas: ". vl ."
+                       "TL1st vl ."
+                       ". vl TL2nd"
+                       "TL3rd vl ."
+                       ".  vl TL4th"
+                       "TL5th vl ."
+                       ". vl TL6th"
+                       ". vl .";
+
+  &__item {
+      background-color: $color-moss-green;
+      color: $color-off-white;
+      padding: 2rem;
+    }
+  }
+
+.vertical-line {
+  grid-area: vl;
+  width: 1rem;
+  background-color: black;
+}
+
+.first-timeline {
+  grid-area: TL1st;
+}
+
+.second-timeline {
+  grid-area: TL2nd;
+}
+
+.third-timeline {
+  grid-area: TL3rd;
+}
+
+.fourth-timeline {
+  grid-area: TL4th;
+}
+
+.fifth-timeline {
+  grid-area: TL5th;
+}
+
+.sixth-timeline {
+  grid-area: TL6th;
+}

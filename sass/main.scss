@@ -4,12 +4,27 @@
 
 @import "base/animations";
 @import "base/base";
-@import "base/typography";
 @import "base/utilities";
 
-@import "components/button";
+/* typography */
+@import "base/typography/generaltypo";
+/* typography for individual pages */
+@import "base/typography/hometypo";
+@import "base/typography/portaltypo";
+@import "base/typography/reasonstypo";
+@import "base/typography/timelinetypo";
 
-@import "layout/header";
-@import "layout/navigation";
+@import "components/navbar";
 
-@import "pages/home";
+/* home features */
+@import "home/header";
+@import "home/button";
+
+/* portal features */
+@import "portal/main";
+
+/* reasons features */
+@import "reasons/reasons";
+
+/* timeline features */
+@import "timeline/timeline";

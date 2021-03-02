@@ -1,0 +1,31 @@
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+}
+
+/* navbar */
+.navbar {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: .5rem;
+}
+
+/* navbar links */
+a.small-nav__link {
+  color: $color-off-white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1.5px 1.5px black;
+  &:link,
+  &:visited {
+      padding: 1rem 2rem;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-grey 50%);
+      background-size: 220%;
+      transition: all .4s;
+    }
+  &:hover,
+  &:active {
+    background-position: 100%;
+    transform: translateX(1rem);
+  }
+}
