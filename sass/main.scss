@@ -15,14 +15,13 @@
 @import "base/typography/timelinetypo";
 
 @import "components/navbar";
-@import "components/card";
 
 /* home features */
 @import "home/header";
 @import "home/button";
 
 /* portal features */
-@import "portal/main";
+@import "portal/portal";
 
 /* reasons features */
 @import "reasons/reasons";
