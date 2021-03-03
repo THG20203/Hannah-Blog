@@ -1,11 +1,10 @@
 .message-box {
   position: relative;
-  background: linear-gradient(rgba($color-moss-green, 0.7), rgba($color-moss-green, 0.9)),
-    url(../images/hannahImgSmall.png) no-repeat top center fixed;
+  background: linear-gradient(rgba($color-moss-green, 0.7);
   background-size: cover;
   height: 120vh;
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-  &__grid {
+  /* &__grid {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13,5 +12,5 @@
     grid-template-columns: 4;
     grid-template-rows: 2;
     grid-gap: 1rem;
-  }
+  } */
 }
