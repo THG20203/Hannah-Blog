@@ -1,0 +1,21 @@
+.blog-body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-areas: "blogTitle"
+                       "blogText";
+}
+
+.blog-title {
+  background-color: $color-navy;
+  grid-area: blogTitle;
+}
+
+.blog-content {
+  padding: 15rem;
+}
+
+.blog-text {
+  grid-area: blogText;
+  background-color: $color-cream;
+}

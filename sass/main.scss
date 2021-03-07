@@ -11,9 +11,12 @@
 /* typography for individual pages */
 @import "base/typography/hometypo";
 @import "base/typography/portaltypo";
+@import "base/typography/blogtypo";
 @import "base/typography/reasonstypo";
 @import "base/typography/timelinetypo";
 
+/* components */
+@import "components/horizontalrule";
 @import "components/navbar";
 
 /* home features */
@@ -22,6 +25,9 @@
 
 /* portal features */
 @import "portal/portal";
+
+/* blog features */
+@import "blog/blog";
 
 /* reasons features */
 @import "reasons/reasons";

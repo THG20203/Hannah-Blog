@@ -1,0 +1,22 @@
+.blog-title {
+  color: $color-cream;
+  display: block;
+  padding-left: 8rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  &__date {
+    padding: 1rem;
+  }
+}
+
+.blog-text {
+  color: $color-navy;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  &__paragraph {
+    padding-bottom: 2.5rem;
+  }
+}
