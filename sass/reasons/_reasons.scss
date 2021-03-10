@@ -25,7 +25,7 @@
 
 .navy-blue {
   grid-area: navyBlue;
-  background-image: linear-gradient($color-cream, $color-navy);
+  background-image: linear-gradient($color-cream, $color-moss-green);
   opacity: 0.7;
 }
 
@@ -37,12 +37,12 @@
 
 .sheep-image--first {
   grid-area: sheepImg1;
-  background: url(../images/ewes.png) left;
+  background: url('ewes.png') left;
   background-size: cover;
 }
 
 .sheep-image--second {
   grid-area: sheepImg2;
-  background: url(../images/sheepAndMountain.png) bottom;
+  background: url('sheepAndMountain.png') bottom;
   background-size: cover;
 }

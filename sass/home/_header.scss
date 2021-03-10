@@ -1,14 +1,14 @@
 .header {
   position: relative;
   background: linear-gradient(rgba($color-moss-green, 0.7), rgba($color-moss-green, 0.9)),
-      url(../images/hannahImgSmall.png) no-repeat top center fixed;
+     url('hannahImgSmall.png') no-repeat top center fixed;
   background-size: cover;
   height: 120vh;
 
   @media only screen and  (min-resolution: 192dpi) and (min-width: 600px),
   only screen and  (min-width: 800px) {
     background: linear-gradient(rgba($color-moss-green, 0.7), rgba($color-moss-green, 0.9)),
-        url(../images/hannahImg.png) no-repeat top center fixed;
+        url('hannahImg.png') no-repeat top center fixed;
     background-size: cover;
     height: 100vh;
   }

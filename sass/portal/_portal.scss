@@ -1,6 +1,6 @@
 .portal-content {
   background: linear-gradient(rgba($color-cream, 0.5), rgba($color-cream, 0.7)),
-  url(../images/dogInField.png) no-repeat top center fixed;
+  url('dogInField.png') no-repeat top center fixed;
   background-size: cover;
   height: 100vh;
 }
@@ -49,7 +49,7 @@
 }
 .message-item2 {
   grid-area: story2;
-  background-image: url(../images/sheepAndMountain.png);
+  background-image: url('sheepAndMountain.png');
   background-size: cover;
 }
 .message-item3 {
@@ -58,7 +58,7 @@
 }
 .message-item4 {
   grid-area: story4;
-  background-image: url(../images/sheepInGrass.png);
+  background-image: url('sheepInGrass.png');
   background-size: cover;
 }
 .message-item5 {
@@ -67,6 +67,6 @@
 }
 .message-item6 {
   grid-area: story6;
-  background-image: url(../images/ewes.png);
+  background-image: url('ewes.png');
   background-size: cover;
 }
