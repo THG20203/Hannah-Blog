@@ -332,7 +332,7 @@ ul {
     grid-area: item6; }
   @media only screen and (max-width: 56.25em) {
     .navigation__list {
-      grid-template-columns: 2fr 1fr 2fr;
+      grid-template-columns: 1fr 2fr 1fr;
       grid-template-rows: 10rem repeat(8, 1fr);
       grid-template-areas: ". . ." ". item1 ." ". item2 ." ". item3 ." ". item4 ." ". item5 ." ". item6 ."; } }
 
