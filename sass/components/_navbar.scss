@@ -80,6 +80,17 @@
       &--press {
       grid-area: item6;
       }
+      @include respond(tab-port) {
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 10rem repeat(8, 1fr);
+        grid-template-areas:". . ."
+                            ". item1 ."
+                            ". item2 ."
+                            ". item3 ."
+                            ". item4 ."
+                            ". item5 ."
+                            ". item6 .";
+      }
     }
 
     &__item {
@@ -90,6 +101,9 @@
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(200, 8);
+        @include respond(tab-port) {
+            transform: scale(200);
+        }
     }
 
     &__checkbox:checked ~ &__nav {
