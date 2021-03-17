@@ -21,10 +21,6 @@
             right: 4rem;
         }
 
-        @include respond(phone) {
-            top: 1rem;
-            right: 3rem;
-        }
     }
 
     &__background {
@@ -42,10 +38,6 @@
             right: 6rem;
         }
 
-        @include respond(phone) {
-            top: 5rem;
-            right: 5rem;
-        }
     }
 
     &__nav {
