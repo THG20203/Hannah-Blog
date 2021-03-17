@@ -1,0 +1,21 @@
+.lifegets-body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2;
+  grid-template-areas: "blogTitle"
+                       "blogText";
+}
+
+.lifegets-title {
+  background-color: $color-navy;
+  grid-area: blogTitle;
+}
+
+.lifegets-content {
+  padding: 15rem;
+}
+
+.lifegets-text {
+  grid-area: blogText;
+  background-color: $color-cream;
+}

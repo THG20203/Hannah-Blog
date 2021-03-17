@@ -1,0 +1,29 @@
+.feature {
+  &__heading {
+    text-align: center;
+    color: $color-grey;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    padding: 1rem 1rem 0.5rem;
+    grid-row: 1 /2;
+  }
+  &__subheading {
+    text-align: center;
+    text-decoration: underline;
+    color: $color-moss-green;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    padding: 0rem 1rem 1rem;
+  }
+  &__text {
+    color: $color-mid-grey;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    margin: 0.5rem 0 2rem 0;
+    grid-column: 1 / span 2;
+  }
+}

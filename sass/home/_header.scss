@@ -1,23 +1,16 @@
 .header {
-  position: relative;
-  background: linear-gradient(rgba($color-navy, 0.7), rgba($color-navy, 0.9)),
-     url('hannahImgSmall.png') no-repeat top center fixed;
+  background: linear-gradient(rgba($color-moss-green, 0.7), rgba($color-moss-green, 0.9)),
+     url('hannahImg.png') no-repeat top center fixed;
   background-size: cover;
-  height: 120vh;
-
-  @media only screen and  (min-resolution: 192dpi) and (min-width: 600px),
-  only screen and  (min-width: 800px) {
-    background: linear-gradient(rgba($color-moss-green, 0.7), rgba($color-moss-green, 0.9)),
-        url('hannahImg.png') no-repeat top center fixed;
-    background-size: cover;
-    height: 100vh;
-  }
+  height: 130vh;
+  display: grid;
+  grid-template-rows: 45vh [main-start] min-content [main-end];
+  grid-template-columns: [full-start] 1fr [center-start]
+  repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
 
   &__text-box {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    grid-row: main-start / main-end;
+    grid-column: center-start / center-end;
   }
 }

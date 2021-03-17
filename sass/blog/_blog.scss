@@ -1,21 +1,31 @@
-.blog-body {
-  height: 100vh;
+.blog-container {
+  background: linear-gradient(rgba($color-light-grey, 0.9), rgba($color-grey, 0.9));
   display: grid;
-  grid-template-rows: 2;
-  grid-template-areas: "blogTitle"
-                       "blogText";
-}
-
-.blog-title {
-  background-color: $color-navy;
-  grid-area: blogTitle;
+  grid-template-rows: 40vh [title-start] 25vh [title-end main-start] min-content [main-end];
+  grid-template-columns: [full-start] 1fr [center-start]
+  repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
 }
 
 .blog-content {
-  padding: 15rem;
-}
+  background-color: $color-sand;
+  grid-column: center-start / center-end;
+  grid-row: main-start / main-end;
 
-.blog-text {
-  grid-area: blogText;
-  background-color: $color-cream;
+  margin: 3rem 0 8rem 0;
+  /* grid of content. */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 1.5rem;
+
+  &__item {
+    height: 20rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }

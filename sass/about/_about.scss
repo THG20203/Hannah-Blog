@@ -1,0 +1,46 @@
+.about-container {
+  background: linear-gradient(rgba($color-light-grey, 0.9), rgba($color-grey, 0.9));
+  display: grid;
+  grid-template-rows: 40vh [title-start] 25vh [title-end main-start] min-content [main-end];
+  grid-template-columns: [full-start] 1fr [center-start]
+  repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+}
+
+.about-content {
+  background-color: $color-sand;
+  grid-column: center-start / center-end;
+  grid-row: main-start / main-end;
+
+  margin: 3rem 0 8rem 0;
+  /* grid of content. */
+  display: grid;
+  grid-template-columns: 8;
+  grid-template-rows: 8;
+  grid-gap: 1.5rem;
+
+  &__item {
+    padding: 3rem;
+    &--1 {
+      grid-row: 1 / 4;
+      grid-column: 1 / 3;
+    }
+    &--2 {
+      grid-row: 4 / 8;
+      grid-column: 5 / 8;
+    }
+  }
+  &__text--1 {
+    grid-row: 1 / 4;
+    grid-column: 3 / 8;
+  }
+  &__text--2 {
+    grid-row: 4 / 8;
+    grid-column: 1 / 5;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

@@ -10,10 +10,10 @@
 @import "base/typography/generaltypo";
 /* typography for individual pages */
 @import "base/typography/hometypo";
-@import "base/typography/portaltypo";
+@import "base/typography/abouttypo";
+@import "base/typography/meettypo";
 @import "base/typography/blogtypo";
-@import "base/typography/reasonstypo";
-@import "base/typography/timelinetypo";
+@import "base/typography/lifegetstypo";
 
 /* components */
 @import "components/horizontalrule";
@@ -23,11 +23,18 @@
 @import "home/header";
 @import "home/button";
 
-/* portal features */
-@import "portal/portal";
+/* about features */
+@import "about/about";
+
+/* meet the team features */
+@import "meet/meet";
 
 /* blog features */
 @import "blog/blog";
+@import "blog/lifegets";
 
-/* reasons features */
-@import "reasons/reasons";
+/* gallery features */
+@import "gallery/gallery";
+
+/* gallery features */
+@import "press/press";

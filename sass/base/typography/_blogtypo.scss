@@ -1,22 +1,37 @@
-.blog-title {
-  color: $color-cream;
-  display: block;
-  padding-left: 8rem;
+.blog-content {
+  padding: 1rem;
+  margin: 2rem;
   text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 1rem;
-  &__date {
-    padding: 1rem;
+  &__text {
+    background-color: $color-moss-green;
   }
-}
-
-.blog-text {
-  color: $color-navy;
-  text-align: left;
-  font-size: 2rem;
-  font-weight: 400;
-  &__paragraph {
-    padding-bottom: 2.5rem;
+  &__date {
+    color: $color-light-grey;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 0.5rem 0;
+  }
+  &__title {
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  &__link {
+    color: $color-off-white;
+    text-decoration: none;
+    display: inline-block;
+  }
+  &__link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: $color-off-white;
+    transition: width .5s;
+  }
+  &__link:hover::after {
+    width: 100%;
+    transition: width .5s;
   }
 }

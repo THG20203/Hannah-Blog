@@ -4,7 +4,7 @@
   color: $color-off-white;
   }
 
-  /* Frekled Farmher title */
+  /* title */
   &--main {
     display: block;
     text-transform: uppercase;
@@ -14,7 +14,6 @@
     animation-name: moveInLeft;
     backface-visibility: hidden;
     animation-duration: 2s;
-    margin-bottom: 4rem;
   }
 
   &--sub {
@@ -25,4 +24,8 @@
     animation: moveInRight 2s;
     margin-bottom: 4rem;
   }
+}
+
+.home-title {
+  margin-bottom: 4rem;
 }
