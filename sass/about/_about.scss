@@ -14,29 +14,45 @@
   margin: 3rem 0 8rem 0;
   /* grid of content. */
   display: grid;
-  grid-template-columns: 8;
-  grid-template-rows: 8;
+  grid-template-columns: 4;
+  grid-template-rows: 2;
+  grid-template-areas: "image1 text1 text1 text1"
+                       "text2 text2 text2 image2";
   grid-gap: 1.5rem;
 
+  @include respond(tab-port) {
+    grid-template-areas: "image1 text1"
+                        "image2 text2";
+  }
+
+  @include respond(phone) {
+    grid-template-areas: "image1"
+                        "text1"
+                        "image2"
+                        "text2";
+  }
+
+  /* images */
   &__item {
     padding: 3rem;
     &--1 {
-      grid-row: 1 / 4;
-      grid-column: 1 / 3;
+      grid-area: image1;
     }
     &--2 {
-      grid-row: 4 / 8;
-      grid-column: 5 / 8;
+      grid-area: image2;
     }
   }
-  &__text--1 {
-    grid-row: 1 / 4;
-    grid-column: 3 / 8;
+
+  /* text */
+  &__text {
+    &--1 {
+      grid-area: text1;
+    }
+    &--2 {
+      grid-area: text2;
+    }
   }
-  &__text--2 {
-    grid-row: 4 / 8;
-    grid-column: 1 / 5;
-  }
+
   &__img {
     width: 100%;
     height: 100%;
