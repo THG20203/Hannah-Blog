@@ -16,6 +16,8 @@ app.use(express.static(path.join(__dirname, 'css')));
 app.use(express.static(path.join(__dirname, 'img')));
 // Set the folder for general images
 app.use(express.static(path.join(__dirname, 'images')));
+// Set the folder for gallery images
+app.use(express.static(path.join(__dirname, 'galleryimg')));
 //Set the folder for Node Modules
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
