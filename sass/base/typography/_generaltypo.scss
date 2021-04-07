@@ -24,7 +24,7 @@ ul {
   justify-items: center;
   transition: all .3s;
     @include respond(tab-land) {
-      font-size: 6rem;
+      font-size: 3rem;
     }
     @include respond(tab-port) {
       font-size: 5rem;
