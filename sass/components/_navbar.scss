@@ -15,12 +15,6 @@
         box-shadow: 0 1rem 3rem $color-box-shadow;
         text-align: center;
         cursor: pointer;
-
-        @include respond(tab-port) {
-            top: 2rem;
-            right: 4rem;
-        }
-
     }
 
     &__background {
@@ -32,12 +26,6 @@
         background-color: $color-off-white;
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-
-        @include respond(tab-port) {
-            top: 6rem;
-            right: 6rem;
-        }
-
     }
 
     &__nav {
@@ -72,9 +60,9 @@
       &--press {
       grid-area: item6;
       }
-      @include respond(tab-port) {
+      @include respond(tab-land) {
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 5rem repeat(8, 1fr);
+        grid-template-rows: 7.5rem repeat(8, 1fr);
         grid-template-areas:". . ."
                             ". item1 ."
                             ". item2 ."
@@ -88,10 +76,10 @@
     &__item {
         margin: 1rem;
         animation: moveInRight 4s;
-        @include respond(tab-port) {
-          padding-bottom: 3rem;
+        @include respond(tab-land) {
+          padding-bottom: 4rem;
         }
-        @include respond(tab-landscape) {
+        @include respond(tab-port) {
           padding-bottom: 2rem;
         }
         @include respond(phone) {
@@ -102,7 +90,7 @@
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(200, 8);
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             transform: scale(600);
         }
     }

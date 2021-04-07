@@ -2,8 +2,14 @@
   background: linear-gradient(rgba($color-light-grey, 0.9), rgba($color-grey, 0.9));
   display: grid;
   grid-template-rows: 35vh [title-start] 25vh [title-end main-start] min-content [main-end];
+  @include respond(tab-land) {
+    grid-template-rows: 15vh [title-start] 20vh [title-end main-start] min-content [main-end];
+  }
   @include respond(tab-port) {
-    grid-template-rows: 20vh [title-start] 25vh [title-end main-start] min-content [main-end];
+    grid-template-rows: 12.5vh [title-start] 25vh [title-end main-start] min-content [main-end];
+  }
+  @include respond(phone) {
+    grid-template-rows: 10vh [title-start] 30vh [title-end main-start] min-content [main-end];
   }
   grid-template-columns: [full-start] 1fr [center-start]
   repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];

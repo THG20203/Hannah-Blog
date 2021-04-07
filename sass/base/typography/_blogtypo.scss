@@ -10,12 +10,24 @@
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     padding: 0.5rem 0.5rem 0;
+    @include respond(tab-land) {
+      font-size: 1.75rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
   }
   &__title {
     font-size: 1.3rem;
     letter-spacing: 0.2rem;
     padding: 0.5rem;
     text-align: center;
+    @include respond(tab-land) {
+      font-size: 2rem;
+    }
+    @include respond(tab-port) {
+      font-size: 1.75rem;
+    }
   }
   &__link {
     color: $color-off-white;
