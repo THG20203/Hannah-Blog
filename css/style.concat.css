@@ -99,10 +99,10 @@ ul {
   transition: all .3s; }
   @media only screen and (max-width: 75em) {
     .navigation__link, .navigation__link:visited, .navigation__link:active, .navigation__link:hover {
-      font-size: 6rem; } }
+      font-size: 4.5rem; } }
   @media only screen and (max-width: 56.25em) {
     .navigation__link, .navigation__link:visited, .navigation__link:active, .navigation__link:hover {
-      font-size: 5rem; } }
+      font-size: 3.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__link, .navigation__link:visited, .navigation__link:active, .navigation__link:hover {
       font-size: 2.5rem; } }
