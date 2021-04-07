@@ -23,6 +23,15 @@ ul {
   align-items: center;
   justify-items: center;
   transition: all .3s;
+    @include respond(tab-port) {
+      font-size: 4rem;
+    }
+    @include respond(tab-landscape) {
+      font-size: 3.5rem;
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }
 }
 
