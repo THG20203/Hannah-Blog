@@ -41,10 +41,6 @@ app.get('/blog', function(req, res) {
   res.render('blog');
 });
 
-app.get('/lifegets', function(req, res) {
-  res.render('lifegets');
-});
-
 app.get('/gallery', function(req, res) {
   res.render('gallery');
 });
