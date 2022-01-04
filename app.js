@@ -59,5 +59,5 @@ if (port == null || port == "") {
 
 // Tune into port 3000
 app.listen(port, function() {
-  console.log("Server started succesfully");
+  console.log("Server has started succesfully");
 });
