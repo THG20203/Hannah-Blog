@@ -20,11 +20,12 @@ app.use(express.static(path.join(__dirname, 'images')));
 app.use(express.static(path.join(__dirname, 'galleryimg')));
 //Set the folder for Node Modules
 app.use(express.static(path.join(__dirname, 'node_modules')));
-
+// body parser
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+//              ROUTES
 app.get('/', function(req, res) {
   res.render('index');
 });
