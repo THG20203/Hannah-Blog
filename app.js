@@ -50,8 +50,6 @@ app.get('/press', function(req, res) {
   res.render('press');
 });
 
-
-
 //Tune into port for Heroku
 let port = process.env.PORT;
 if (port == null || port == "") {
