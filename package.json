@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/THG20203/Hannah-Blog-SASS.git"
+    "url": "git+https://github.com/THG20203/Hannah-Blog.git"
   },
   "bugs": {
-    "url": "https://github.com/THG20203/Hannah-Blog-SASS/issues"
+    "url": "https://github.com/THG20203/Hannah-Blog/issues"
   },
-  "homepage": "https://github.com/THG20203/Hannah-Blog-SASS#readme"
+  "homepage": "https://github.com/THG20203/Hannah-Blog#readme"
 }
